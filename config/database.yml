@@ -21,5 +21,6 @@ test:
   database: db/test.sqlite3
 
 production:
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   adapter: postgresql
   encoding: unicode
