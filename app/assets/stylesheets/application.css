@@ -1,0 +1,333 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ html {
+  scroll-behavior: smooth;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.left,
+.right {
+    top: 0%;
+    float: left;
+    position: fixed;
+    z-index: 100;
+    min-height: 150vh;
+}
+
+.left {
+    background: #fc682d;
+    display: inline-block;
+    white-space: nowrap;
+    width: 50px;
+    transition: width .5s;
+    z-index: 100;
+}
+
+.right {
+    background: #fff;
+    width: 350px;
+    transition: width 1s;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    z-index: 100;
+}
+
+.left:hover {
+    width: 250px;
+}
+
+.item:hover {
+    background-color: #414141;
+}
+
+.left .nav-icon {
+    margin: 15px;
+    width: 20px;
+    color: #fff;
+}
+
+i.nav-icon {
+    font-size: 20px;
+    vertical-align: middle !important;
+}
+
+.left .img-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  vertical-align: middle !important;
+  margin: 10px;
+}
+
+.item {
+    height: 40px;
+    overflow: hidden;
+    color: #fff;
+}
+/*text logo*/
+.name-logo {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*Containers*/
+
+.divider {
+  border: solid 2px #fff;
+}
+
+.badge {
+  width: 50px;
+  height: 40px;
+  margin: 10px 0;
+}
+th,td {
+  width: 25%;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+.card-source {
+  background: #424242!important;
+  color: #f2f2f2;
+  padding: 0!important;
+}
+
+.card-body-source{
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.texto {
+  background: #fff!important;
+  color: #414141;
+  text-align: justify;
+}
+
+.content-btn-source {
+  margin-left: 20px;
+}
+
+summary {
+  padding-left: 20px;
+}
+
+.section-form {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+
+}
+
+.card-form {
+  background: #8f8f8f!important;
+}
+
+.section-categories {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+
+}
+
+.card-categories {
+  background: #f2f2f2!important;
+}
+
+.section-topics {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+
+}
+
+.card-topics {
+  background: #f2f2f2!important;
+}
+
+.section-welcome {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.section-login {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.bg-l {
+  background: #f3f3f3;
+  border: solid 1px #fc682d;
+}
+
+.cover-lg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.row-pagy {
+  padding-top: 10px;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-search {
+  width: 100px;
+  height: auto;
+  border: none;
+  margin: 5px;
+  border-radius: 10px;
+  background: #fc682d;
+  color: #fff;
+}
+
+.btn-search:hover {
+  background: #fff;
+  border: solid 2px #fc682d;
+  color: #fc682d;
+}
+
+.btn-login {
+
+  background: #fc682d!important;
+  color: #fff!important;
+}
+
+.btn-login:hover {
+  background: #fff!important;
+  border: solid 2px #fc682d!important;
+  color: #fc682d!important;
+}
+
+.bg {
+  background-image: url(/cover-login.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-registration {
+  background-image: url(/cover-registration.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron {
+  color: #fff;
+}
+
+.rounded-circle {
+  border: solid 2px #fc682d;
+}
+
+/* Media display none in small screens */
+@media (min-width: 992px) {
+  #portada-movil {
+    display: none;
+  }
+}
+
+/* Media display none in small screens */
+@media (min-width: 768px) {
+  #portada-movil {
+    display: none;
+  }
+  
+}
+
+@media (min-width: 576px) {
+  .img-movil, .text-portada-movil {
+    display: none;
+  }
+}
+
+/* Media display none in small screens ---modify cover page---*/
+@media (max-width: 576px) {
+  #no-info-home {
+    display: none;
+  }
+
+  .content-btn-source {
+    display: flex;
+  }
+
+  .btn-source {
+    margin: 0 auto;
+  }
+
+  summary {
+    padding-left: 40px;
+  }
+
+  .content-btns {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .btns {
+    margin: 0 auto;
+    margin-top: 5px;
+    
+  }
+
+  .welcome {
+    background: #fff;
+    min-height: 100vh;
+  }
+
+  .welcome p {
+    margin-top: 50px; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

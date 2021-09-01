@@ -1,0 +1,12 @@
+{
+  "editor.fontSize": 20,
+  "editor.wordWrap": "on",
+  "[json]": {
+
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "diffEditor.wordWrap": "on"
+}

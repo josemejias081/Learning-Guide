@@ -1,0 +1,40 @@
+
+  <h1 class="title">Nuevo recurso</h1>
+  <div class="row">
+    <div class="card card-source">
+      <div class="card-body card-body-source">
+        <h5 class="card-title"><%= @topic.name %></h5>
+        <p class="card-text"><%= @topic.description %></p>
+        <div class="panel-body well" >
+          <h5 class="card-title">Categorías</h5>
+          <ul>
+            <% @topic.categories.each do |category|%>
+              <li><%= category.name %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="toggle">
+        <details>
+          <summary>Ver Notas</summary>
+          <div class="card-body card-body-source texto">
+            <small class="text-secondary color-red">Fecha de creación: <%= I18n.l(@topic.created_at,format: "%d / %m / %Y") %></small>
+            
+            <p class="card-text texto"><%= @topic.note %></p>
+            <small class="text-secondary color-red">Última actualizacion: <%= I18n.l(@topic.updated_at,format: "%d / %m / %Y") %></small>
+          </div>
+        </details>
+      </div> 
+      <div class="my-3 content-btn-source">
+        <a href="<%= @topic.link %>" target="_blanck" class="btn btn-primary btn-small btn-source">Ir al Recurso</a>
+      </div>
+    </div>
+  </div>
+  <div class="mt-3 content-btns">
+ 
+    <%= link_to '✍ Editar', edit_topic_path(@topic), class: 'btn btn-warning text-white btns' %>
+    <%= link_to '◀ Atras', my_topics_path, class: 'btn btn-primary text-white btns' %>
+    <%= link_to "Eliminar Recurso❔", @topic, method: :delete, class: 'btn btn-danger text-white btns' %>
+    
+  </div>

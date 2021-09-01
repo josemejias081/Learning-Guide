@@ -1,0 +1,24 @@
+<h1 class="title">Lista de categorías</h1>
+<section class="section-categories">
+  <div class="row">
+    <% @categories.each do |category| %>
+    <div class="col-sm-3">
+      <div class="card mt-2">
+        <div class="card-header" style="background-color: <%= category.color%>">
+          <h5 class="card-title text-white"><%= category.name %></h5>
+        </div>
+        <div class="card-body card-categories">
+          <p>Ref. <%= category.id %></p>
+          <%= link_to " Más ↗", category, class:"btn btn-sm btn-success"%>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="row row-pagy">
+    <%== pagy_bootstrap_nav(@pagy) %>
+  </div>
+</section>
+
+
+
