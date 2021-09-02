@@ -16,10 +16,10 @@
 
   <body>
     <% if notice %>
-      <p class="alert alert-success text-center"><%= notice %></p>
+      <p class="alert alert-success col-md-3 col-md-offset-4 text-center mx-auto"role="alert" style="width: 300px;"><%= notice %></p>
     <% end %>
     <% if alert %>
-      <p class="alert alert-danger text-center"><%= alert %></p>
+      <p class="alert alert-danger col-md-3 col-md-offset-4 text-center mx-auto"role="alert" style="width: 300px;"><%= alert %></p>
     <% end %>
     <%= render 'layouts/header' %>
     <div class="container-fluid">
