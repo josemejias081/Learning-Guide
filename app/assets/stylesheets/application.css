@@ -29,6 +29,10 @@
   margin-bottom: 10px;
 }
 
+.container {
+  padding-top: 50px;
+}
+
 .left,
 .right {
     top: 0%;
@@ -145,19 +149,9 @@ th,td {
   text-align: justify;
 }
 
-.content-btn-source {
-  *margin-left: 20px;
-}
-
-summary {
-  *padding-left: 20px;
-}
-
 .section-form {
   width: 100%;
-  *padding-left: 20px;
-  *padding-right: 0;
-
+  
 }
 
 .card-form {
@@ -166,8 +160,6 @@ summary {
 
 .section-categories {
   width: 100%;
-  *padding-left: 20px;
-  *padding-right: 0;
 
 }
 
@@ -177,9 +169,6 @@ summary {
 
 .section-topics {
   width: 100%;
-  *padding-left: 20px;
-  *padding-right: 0;
-
 }
 
 .card-topics {
@@ -188,14 +177,11 @@ summary {
 
 .section-welcome {
   width: 100%;
-  *padding-left: 20px;
-  *padding-right: 0;
+  
 }
 
 .section-login {
   width: 100%;
-  *padding-left: 20px;
-  *padding-right: 0;
 }
 
 .bg-l {
@@ -308,12 +294,7 @@ summary {
     margin: 0 auto;
   }
 
-  summary {
-    padding-left: 40px;
-  }
-
   .content-btns {
-    padding-left: 20px;
     display: flex;
     flex-wrap: wrap;
   }
