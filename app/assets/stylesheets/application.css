@@ -54,9 +54,7 @@
   z-index: 100;
   padding-bottom: 50px;
   padding-right: 50px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+
 }
 
 .right {
@@ -71,6 +69,10 @@
 
 .left:hover {
     width: 250px;
+}
+
+.menu:hover {
+  width: 250px;
 }
 
 .item:hover {
@@ -133,8 +135,8 @@ th,td {
 }
 
 .card-body-source{
-  margin-left: 20px !important;
-  margin-right: 20px !important;
+  *margin-left: 20px !important;
+  *margin-right: 20px !important;
 }
 
 .texto {
@@ -144,17 +146,17 @@ th,td {
 }
 
 .content-btn-source {
-  margin-left: 20px;
+  *margin-left: 20px;
 }
 
 summary {
-  padding-left: 20px;
+  *padding-left: 20px;
 }
 
 .section-form {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 0;
 
 }
 
@@ -164,8 +166,8 @@ summary {
 
 .section-categories {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 0;
 
 }
 
@@ -175,8 +177,8 @@ summary {
 
 .section-topics {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 0;
 
 }
 
@@ -186,14 +188,14 @@ summary {
 
 .section-welcome {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 0;
 }
 
 .section-login {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 0;
+  *padding-left: 20px;
+  *padding-right: 0;
 }
 
 .bg-l {

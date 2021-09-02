@@ -1,12 +1,14 @@
 <nav class="left">
   <div class="item menu">
+      <i class="fas fa-fw fa-bars nav-icon"></i>Menú
+  </div>
+  
+  <div class="item ">
     <%= link_to root_path do %> 
       <img src="/logo.jpg" alt="Logo" class="img-logo rounded-circle text-white"><span class="name-logo">Guia de Estudio</span>
     <% end %>
   </div>
-  <div class="item ">
-      <i class="fas fa-fw fa-bars nav-icon"></i>Menú
-  </div>
+  
   <hr class="divider">
   <% if user_signed_in? %>
 
