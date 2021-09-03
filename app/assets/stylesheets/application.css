@@ -138,10 +138,6 @@ th,td {
   padding: 0!important;
 }
 
-.card-body-source{
-  *margin-left: 20px !important;
-  *margin-right: 20px !important;
-}
 
 .texto {
   background: #fff!important;
@@ -149,40 +145,18 @@ th,td {
   text-align: justify;
 }
 
-.section-form {
-  width: 100%;
-  
-}
-
 .card-form {
   background: #8f8f8f!important;
-}
-
-.section-categories {
-  width: 100%;
-
 }
 
 .card-categories {
   background: #f2f2f2!important;
 }
 
-.section-topics {
-  width: 100%;
-}
-
 .card-topics {
   background: #f2f2f2!important;
 }
 
-.section-welcome {
-  width: 100%;
-  
-}
-
-.section-login {
-  width: 100%;
-}
 
 .bg-l {
   background: #f3f3f3;
@@ -311,7 +285,7 @@ th,td {
   }
 
   .welcome p {
-    margin-top: 20px; 
+    margin-top: 10px; 
   }
 }
 

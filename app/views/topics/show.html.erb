@@ -16,7 +16,7 @@
       </div>
       <hr>
       <div class="toggle">
-        <details>
+        <details class="mx-3">
           <summary>Ver Notas</summary>
           <div class="card-body card-body-source texto">
             <small class="text-secondary color-red">Fecha de creación: <%= I18n.l(@topic.created_at,format: "%d / %m / %Y") %></small>
@@ -26,7 +26,7 @@
           </div>
         </details>
       </div> 
-      <div class="my-3 content-btn-source">
+      <div class="m-3 content-btn-source">
         <a href="<%= @topic.link %>" target="_blanck" class="btn btn-primary btn-small btn-source">Ir al Recurso</a>
       </div>
     </div>
