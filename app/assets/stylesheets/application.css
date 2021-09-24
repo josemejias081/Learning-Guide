@@ -33,6 +33,17 @@
   padding-top: 50px;
 }
 
+.welcome {
+  background: url(/EE.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 100vh;
+  color: #fff;
+}
+
+
 .left,
 .right {
     top: 0%;
@@ -143,6 +154,7 @@ th,td {
   background: #fff!important;
   color: #414141;
   text-align: justify;
+  
 }
 
 .card-form {
@@ -160,7 +172,12 @@ th,td {
 
 .bg-l {
   background: #f3f3f3;
-  border: solid 1px #fc682d;
+  border: solid 3px #fc682d;
+}
+
+.bg-l-w {
+  background: #000;
+  
 }
 
 .cover-lg {
@@ -195,7 +212,7 @@ th,td {
 
 .btn-search:hover {
   background: #fff;
-  border: solid 2px #fc682d;
+  border: solid 3px #fc682d;
   color: #fc682d;
 }
 
@@ -207,14 +224,14 @@ th,td {
 
 .btn-login:hover {
   background: #fff!important;
-  border: solid 2px #fc682d!important;
+  border: solid 3px #fc682d!important;
   color: #fc682d!important;
 }
 
 .bg {
-  background-image: url(/cover-login.jpg);
+  background-image: url(/E.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -230,7 +247,7 @@ th,td {
 }
 
 .rounded-circle {
-  border: solid 2px #fc682d;
+  border: solid 3px #fc682d;
 }
 
 /* Media display none in small screens */
@@ -249,7 +266,7 @@ th,td {
 }
 
 @media (min-width: 576px) {
-  .img-movil, .text-portada-movil {
+  #portada-movil {
     display: none;
   }
 }
@@ -282,6 +299,7 @@ th,td {
   .welcome {
     background: #fff;
     min-height: 100vh;
+    color: #000;
   }
 
   .welcome p {
