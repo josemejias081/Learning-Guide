@@ -43,6 +43,25 @@
   color: #fff;
 }
 
+.user-active {
+  color: #fc682d;
+  
+
+}
+
+.btn-means {
+  background: #fc682d;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.btn-means:hover {
+  background: #fff;
+  color: #fc682d;
+  border: solid 3px #fc682d;
+}
 
 .left,
 .right {
