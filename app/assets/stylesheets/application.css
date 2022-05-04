@@ -45,8 +45,6 @@
 
 .user-active {
   color: #fc682d;
-  
-
 }
 
 .btn-means {
@@ -79,6 +77,7 @@
     width: 0px;
     transition: width .5s;
     z-index: 100;
+
 }
 
 .menu {
@@ -133,14 +132,15 @@ i.nav-icon {
 }
 
 .item {
-    height: 40px;
-    overflow: hidden;
-    color: #fff;
+  height: 40px;
+  overflow: hidden;
+ 
 }
 /*text logo*/
 .name-logo {
-  color: #ffffff;
-  text-decoration: none;
+  color: #fff;
+ 
+  
 }
 
 /*Containers*/
