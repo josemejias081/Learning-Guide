@@ -1,0 +1,29 @@
+<h1 class="title">Agenda</h1>
+<section class="section-categories">
+  <div class="row">
+    <% @schedules.each do |schedule| %>
+    <div class="col-sm-3 my-2">
+      <div class="card mt-2">
+        <div class="card-header bg-primary text-white h5">
+          <%= schedule.day %>: <%= schedule.date %>
+        </div>
+        <div class="card-header ">
+          <p class="h6"><%= schedule.event%></p>
+        </div>
+        <div>
+          <details class="mx-3">
+            <summary>Ver Notas</summary>
+              <p class="card-text"><%= schedule.note %></p>
+          </details>
+        </div> 
+        <div class="d-grid gap-2 card-footer">
+          <%= link_to "Ver evento", schedule, class:"btn btn-sm btn-success"%>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="row row-pagy">
+    
+  </div>
+</section>

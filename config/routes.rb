@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get '/users/my_topics', to: 'users#my_topics', as: "my_topics"
   get '/users/my_categories', to: 'users#my_categories', as: "my_categories"
+  get '/users/my_schedules', to: 'users#my_schedules', as: "my_schedules"
   
 
   

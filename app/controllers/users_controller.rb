@@ -15,4 +15,12 @@ class UsersController < ApplicationController
 
   end
 
+  def my_schedules
+    @schedules = current_user.schedules
+    #@pagy, @schedules = pagy(current_user.schedules.order("created_at DESC"), items: 8)
+    if params[:schedule_event]
+      @pagy, @schedules = pagy(@schedules.search(params[:schedule_event]), items: 10) 
+    end
+  end
+
 end
