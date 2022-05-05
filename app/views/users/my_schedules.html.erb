@@ -3,8 +3,8 @@
   <div class="row">
     <% @schedules.each do |schedule| %>
     <div class="col-sm-3 my-2">
-      <div class="card mt-2">
-        <div class="card-header bg-primary text-white h5">
+      <div id="card-border" class="card mt-2">
+        <div id="header-card-color" class="card-header text-white h5" >
           <%= schedule.day %>: <%= schedule.date %>
         </div>
         <div class="card-header ">
@@ -17,7 +17,7 @@
           </details>
         </div> 
         <div class="d-grid gap-2 card-footer">
-          <%= link_to "Ver evento", schedule, class:"btn btn-sm btn-success"%>
+          <%= link_to "Ver evento", schedule, id:"btn", class:"btn btn-sm btn-success"%>
         </div>
       </div>
     </div>
