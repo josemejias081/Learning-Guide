@@ -9,7 +9,7 @@
           <h5 class="card-title">Categorías</h5>
           <ul>
             <% @topic.categories.each do |category|%>
-              <li><%= category.name %></li>
+              <li style="color: <%= category.color%>"><span style="color: <%= category.color%>" class="pill"><%= category.name %></span></li> 
             <% end %>
           </ul>
         </div>

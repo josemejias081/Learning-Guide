@@ -1,11 +1,10 @@
 <section class="section-form">
-  <div class="card card-form">
+  <div id="card-border" class="card card-form">
     <div class="card-body">
       <%= form_with(model: category) do |f| %>
         <% if category.errors.any? %>
           <div id="error_explanation">
             <h2><%= pluralize(category.errors.count, "error") %> prohibited this category from being saved:</h2>
-
             <ul>
               <% category.errors.each do |error| %>
                 <li><%= error.full_message %></li>
@@ -26,7 +25,6 @@
         </div>
         <div class="actions">
           <%= f.submit "Guardar", class:"btn btn-sm btn-success mt-3" %>
-          <%= link_to '◀ Atras', my_categories_path, class: "btn btn-sm btn-info mt-3" %>
         </div>
       <% end %>
     </div>
