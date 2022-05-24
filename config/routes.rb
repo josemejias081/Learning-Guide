@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :schedules
+  
   root to: "home#index"
  
   #devise_for :users, :controllers => { registrations: 'registrations' }
@@ -14,8 +14,10 @@ Rails.application.routes.draw do
   
 
   
-
+  
   resources :categories
 
   resources :topics
+
+  resources :schedules
 end
