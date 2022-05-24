@@ -5,7 +5,7 @@
     <div class="col-sm-3 my-2">
       <div id="card-border" class="card mt-2">
         <div id="header-card-color" class="card-header text-white h5" >
-          <%= schedule.day %>: <%= schedule.date %>
+          <%= I18n.l(schedule.date, format: '%A, %d de %B de %Y') %>
         </div>
         <div class="card-header ">
           <p class="h6"><%= schedule.event%></p>

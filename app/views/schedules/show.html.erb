@@ -1,7 +1,7 @@
 <div class="container contenedor">
   <div id="card-border" class="card" style="width: 36rem;">
     <div id="header-card-color" class="card-header">
-      <h5 class="card-title"><%= @schedule.day %>: <%= @schedule.date %></h5>
+      <h5 class="card-title"><%= I18n.l(@schedule.date, format: '%A, %d de %B de %Y') %></h5>
     </div>
     <div class="card-body">
       <h5 class="card-subtitle mb-2 text-muted"><%= @schedule.event %></h5>
