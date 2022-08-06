@@ -1,24 +1,51 @@
-# README
+# Learning Guide
+Herramienta tecnológica para ayudar a los usuarios en el acopio de información y recursos online para el aprendizaje o ejecución de tareas tanto en el ámbito escolar como laboral.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Pre-requisitos:
+Debes tener instalado
 
-Things you may want to cover:
+Ruby on Rails " ~> 6.1.4"
+Ruby "2.7.2"
+Instalación:
+Puedes instalarlo clonando el repositorio desde [aquí](https://github.com/josemejias081/Learning-Guide.git "aquí")
 
-* Ruby version
+Construido con:
+- RoR
+- Bootstrap
+- HTML
+- CSS
 
-* System dependencies
+## Implementaciones:
+- Devise: para la autenticación de usuarios
+- Pagy: para paginación
 
-* Configuration
+## ¿Qué hace el proyecto.?
+- Acopiar información relevante para el estudio o ejecucion de tareas, tanto en el ámbito académico, como laboral, discriminada en categorías.
+- Crear agenda de eventos o tareas.
 
-* Database creation
+## ¿Por qué el proyecto es útil?
+ Util porque facilita obtener cualquier informacion acerca de la ejecucion o informacion de alguna tarea o estudio específico.
 
-* Database initialization
+## Autor:
+[José Mejias](http://https://josemejias081.github.io/portafolio/biografy.html "José Mejias")
 
-* How to run the test suite
+## ¿Cómo funciona?
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ingresa a traves de tu cuenta, una vez logeado puedes comenzar a crear categorias para los items de tu interes los cuales hayas buscado en internet y considerado importante para la tarea que tienes o debes realizar, guardando su dirección electrónica.
+- Crea tus propias notas acerca de lo verdaderamente relevante, las cuales puedes consultar en su momento.
+- Crea eventos (recordatorios) a tener en cuenta para un futuro
 
-* Deployment instructions
+## Agradecimiento:
+- Xplosion
+- [ Codigofacilito](https://www.youtube.com/c/codigofacilito " Codigofacilito")
+-  [GoRails](https://www.youtube.com/c/GorailsTV "GoRails")
+-  [Raul Palacios](https://www.youtube.com/c/RaulPalaciosLopez "Raul Palacios")
+- [Makeitrealcamp](https://makeitrealcamp.gitbook.io/ruby-on-rails-5/ "Makeitrealcamp")
+- [Fazt](https://www.youtube.com/c/FaztTech "Fazt")
+- [Alexcg](https://www.youtube.com/results?search_query=alex+cg+design "Alexcg")
 
-* ...
+## Estado del proyecto:
+Actualmente de uso personal.
+
+## Licencia:
+Con licencia MIT .
